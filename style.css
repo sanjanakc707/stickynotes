@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    font-family: "Roboto";
+    min-height:100vh;
+}
+.sticky-notes{
+    display:flex;
+    flex-wrap: wrap;
+    gap:20px;
+    max-width: 800px;
+}
+.note-container{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.note-content{
+    padding: 15px;
+    height: calc(100%-40px);
+    color: azure;
+    outline: none;
+}
+.note-action{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    
+}
+.delete-note{
+    background-color: chartreuse;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius:2px;
+
+}
+.create-note{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    background-color:bisque;
+    border-radius: 10px;
+    margin-left: 15px;
+    font-size:100px;
+    cursor: pointer; 
+}
+.create-note:hover{
+    transform:scale(1.05);
+}
